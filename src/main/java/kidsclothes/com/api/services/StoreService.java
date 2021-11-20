@@ -19,16 +19,12 @@ public interface StoreService {
 		 *  
 		 *  */
 		
-		Optional<Store> findByStoreName(String storename);
+		Optional<Store> buscarStoreId(Long idStore);
 
 		
-		Optional<Store> findByStoreCity(String city);
+		Optional<Store> buscarStoreCity(Long idcity);
 		 
 		 
-		
-		/* Insert a new Store */
-		
-		Store ProductPersist(String storename);
 
 }
 

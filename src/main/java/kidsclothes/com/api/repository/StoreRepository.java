@@ -9,9 +9,8 @@ public interface StoreRepository extends JpaRepository<Store, String> {
 
 	Store findByStoreId(Long id);
 	
-	Store findByStoreCity(String city);
+	Store findByStoreCity(Long idcity);
 	
-	Store findByStoreName(String storename);
 }
 
 

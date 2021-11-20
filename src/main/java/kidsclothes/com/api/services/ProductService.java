@@ -22,17 +22,15 @@ public interface ProductService {
 		 *  
 		 *  
 		 *  */
-		
-		Optional<Product> findByProductname(String productName);
+		Optional<Product> buscarProductId(Long id);
+	
+		Optional<Product> buscarProductName(String productName);
 
 		
-		Optional<Product> findByProductdescription(String productDescription);
+		Optional<Product> buscarProductDescription(String productDescription);
 		 
 		 
-		
-		/* Insert a new Store */
-		
-		Product ProductPersist(String productName);
+
 
 }
 
