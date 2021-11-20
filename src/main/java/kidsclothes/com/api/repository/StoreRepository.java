@@ -7,6 +7,8 @@ import kidsclothes.com.api.entities.Store;
 
 public interface StoreRepository extends JpaRepository<Store, String> {
 
+	Store findByStoreId(Long id);
+	
 	Store findByStoreCity(String city);
 	
 	Store findByStoreName(String storename);

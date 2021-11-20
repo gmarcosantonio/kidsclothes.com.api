@@ -1,6 +1,7 @@
 package kidsclothes.com.api.repository;
 
 
+import org.springframework.data.domain.Page;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.repository.query.Param;
 import org.springframework.transaction.annotation.Transactional;
@@ -19,9 +20,9 @@ import javax.persistence.NamedQuery;
 
 public interface StoreByCountry extends JpaRepository<Store, String> {
 	
-	List<Store> findByidCountry(@Param("idcountry") Long idcountry);
+	 List<Store> findByidCountry(@Param("idcountry") Long idcountry);
 
-	/* Page<Store> findByidCountry(@Param("idcountry") Long idcountry, Page pageble); */
+	 Page<Store> findByidCountry(@Param("idcountry") Long idcountry, Page pageble); 
 
 }
 
