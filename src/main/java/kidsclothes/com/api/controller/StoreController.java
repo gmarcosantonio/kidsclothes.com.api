@@ -22,7 +22,7 @@ import kidsclothes.com.api.services.StoreService;
 import kidsclothes.com.api.dto.StoreDTO;
 
 @RestController
-@RequestMapping("/stores")
+@RequestMapping("/api/stores")
 @CrossOrigin(origins = "*")
 public class StoreController {
 
@@ -37,7 +37,7 @@ public class StoreController {
 	/**
 	 * Retorna uma loja dado id.
 	 * 
-	 * @param cnpj
+	 * @param id
 	 * @return ResponseEntity<Response<StoreDto>>
 	 */
 	@GetMapping(value = "/id/{id}")
@@ -55,7 +55,7 @@ public class StoreController {
 
 		return ResponseEntity.ok(response);
 	}
-
+/*
 	@GetMapping(value = "/city/{idcity}")
 	public ResponseEntity<Response<StoreDTO>> buscarStoreCity(@PathVariable("idcity") Long idcity) {
 		log.info("Searching store by cityid: {}", idcity);
@@ -71,7 +71,7 @@ public class StoreController {
 
 		return ResponseEntity.ok(response);
 	}
-
+*/
 	
 }
 
