@@ -58,7 +58,7 @@ public class ProductController {
 
 		return ResponseEntity.ok(response);
 	}
-	/*
+	
 	@GetMapping(value = "/name/{productName}")
 	public ResponseEntity<Response<ProductDTO>> buscarProductNamey(@PathVariable("productName") String productName) {
 		log.info("Searching product by Name: {}", productName);
@@ -91,6 +91,6 @@ public class ProductController {
 		return ResponseEntity.ok(response);
 	}
 
-	*/
+
 }
 

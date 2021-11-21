@@ -13,7 +13,7 @@ package kidsclothes.com.api.controller;
 
 
 	@RestController
-	@RequestMapping({"/contacts"})
+	@RequestMapping({"/stores"})
 	public class ConsultStoreController {
 
 	   private StoreByCountry repository;
@@ -21,7 +21,7 @@ package kidsclothes.com.api.controller;
 	   ConsultStoreController(StoreByCountry storeRepository) {
 	       this.repository = storeRepository;
 	   }
-	   // métodos do CRUD aqui
+	   
 	   
 	   @GetMapping
 	   public List findAll(){

@@ -55,7 +55,7 @@ public class StoreController {
 
 		return ResponseEntity.ok(response);
 	}
-/*
+
 	@GetMapping(value = "/city/{idcity}")
 	public ResponseEntity<Response<StoreDTO>> buscarStoreCity(@PathVariable("idcity") Long idcity) {
 		log.info("Searching store by cityid: {}", idcity);
@@ -71,7 +71,7 @@ public class StoreController {
 
 		return ResponseEntity.ok(response);
 	}
-*/
+
 	
 }
 
