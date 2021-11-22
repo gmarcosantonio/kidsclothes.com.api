@@ -35,6 +35,7 @@ public Optional<Store> buscarStoreId(Long id) {
 
 @Override
 public Optional<Store> buscarStoreCity(Long idcity) { 
+
 	
 	log.info("Looking for a  Store by Cityid {}", idcity);
 	return Optional.ofNullable(storeRepository.findByStoreCity(idcity));
