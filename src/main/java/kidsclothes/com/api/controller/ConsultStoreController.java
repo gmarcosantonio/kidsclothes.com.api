@@ -13,7 +13,7 @@ package kidsclothes.com.api.controller;
 
 
 	@RestController
-	@RequestMapping({"/stores"})
+	@RequestMapping({"/store"})
 	public class ConsultStoreController {
 
 	   private StoreByCountry repository;

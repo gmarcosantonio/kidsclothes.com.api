@@ -22,7 +22,7 @@ import kidsclothes.com.api.services.StoreService;
 import kidsclothes.com.api.dto.StoreDTO;
 
 @RestController
-@RequestMapping("/api/stores")
+@RequestMapping("/store")
 @CrossOrigin(origins = "*")
 public class StoreController {
 
